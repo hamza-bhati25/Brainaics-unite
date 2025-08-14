@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Page3 style.css">
+    <title>Complaint Domain Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1>What Is The Domain Of Your Complaint?</h1>
+        <form id="myForm">
+            <!-- <div class="option"> -->
+                <div >
+                <input type="radio" id="family" name="options" value="Page4Family.html">
+                <label for="family">1 - Family</label>
+            </div>
+            <div >
+                <input type="radio" id="education" name="options" value="Page4Education.html">
+                <label for="education">2 - Education</label>
+            </div>
+            <div >
+                <input type="radio" id="tax" name="complaintDomain" value="Tax">
+                <label for="tax">3 - Tax</label>
+
+            <div class="ai-usage">
+                <p>We use AI to enhance your experience and provide better assistance.</p>
+            </div>
+            <button type="submit" value="Submit"> Next</button>
+        </form>
+        <script>
+            document.getElementById("myForm").onsubmit = function(event) {
+                event.preventDefault(); // Prevent form submission
+                var selectedOption = document.querySelector('input[name="options"]:checked').value;
+                window.open(selectedOption, '_blank'); // Open the selected page in a new tab
+            };
+        </script>
+    </div>
+        </body>
+</html>
