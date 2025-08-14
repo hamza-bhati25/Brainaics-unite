@@ -1,5 +1,4 @@
 Team leader: Hamza Bhati
-Team leader: Hamza Bhati
 
 Participant 1: Aadil Shaikh
 
